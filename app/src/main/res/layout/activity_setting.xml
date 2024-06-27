@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/s4"
+    tools:context=".SettingActivity">
+
+    <!-- Add onClick method in your activity -->
+
+    <TextView
+        android:id="@+id/textViewPlayingType"
+        android:layout_width="334dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="104dp"
+        android:background="#68000000"
+        android:text="Choose Playing Type"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnBeginner"
+        android:layout_width="188dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="108dp"
+        android:layout_marginBottom="56dp"
+        android:onClick="onBeginnerButtonClick"
+        android:text="Beginner"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:backgroundTint="#FF8F00"
+        app:layout_constraintBottom_toTopOf="@+id/btnIntermediate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewPlayingType" />
+
+    <Button
+        android:id="@+id/btnIntermediate"
+        android:layout_width="188dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="56dp"
+        android:onClick="onIntermediateButtonClick"
+        android:text="Intermediate"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:backgroundTint="#FF8F00"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnBeginner" />
+
+    <Button
+        android:id="@+id/btnHard"
+        android:layout_width="188dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="56dp"
+        android:onClick="onHardButtonClick"
+        android:text="Hard"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:backgroundTint="#FF8F00"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnIntermediate" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
